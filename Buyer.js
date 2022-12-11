@@ -3,6 +3,7 @@ import { StyleSheet, Image, View, Text } from 'react-native';
 
 const Buyer = (props)=> {
     return(
+        <View style={styles.buyerContainer}>
         <View style={styles.buyers}>
            <View style={styles.buyerInfo}>
             <Image source={props.image} style={styles.img1}/>
@@ -13,16 +14,19 @@ const Buyer = (props)=> {
            </View>
            <Text style={styles.buyerReview}>{props.text}</Text>
         </View>
+        </View>
     );
 }
 const styles = StyleSheet.create({
+    buyerContainer:{
+        display:'flex',
+        alignItems:'center',
+    },
     buyers:{
         width:300,
         height:240,
         backgroundColor:'#511f50',
         borderRadius:10,
-        display:'flex',
-        marginHorizontal:30,
         marginVertical:15,
     },
     img1:{

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, ScrollView} from 'react-native';
+import {Text, View, StyleSheet, ScrollView, ImageBackground} from 'react-native';
 import Buyer from './Buyer';
 import Review from './Review';
 
@@ -7,6 +7,7 @@ const App = () =>{
   return(
     <ScrollView style={{width:'100%'}}>
     <View style={styles.screen}>
+      <ImageBackground source={require('./background.png')} style={styles.background}>
     <Text style={styles.header}>10,000+ of our users love our product.</Text>
     <Text style={styles.paragraph}>We only provide great products combined with excellent customer service. See what our 
       satisfied customers are saying about our service</Text>
@@ -31,7 +32,7 @@ const App = () =>{
       Will definitely use them again and recommend them to everyone!"'
       />
 
-      
+    </ImageBackground>
     </View>
     </ScrollView>
   )
