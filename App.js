@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View, StyleSheet, ScrollView, ImageBackground} from 'react-native';
 import Buyer from './Buyer';
 import Review from './Review';
+const arr = ['Rated 5 Stars in Reviews','Rated 5 Stars in Report Guru','Rated 5 Stars in BestTech']
 
 const App = () =>{
   return(
